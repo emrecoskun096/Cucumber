@@ -1,0 +1,14 @@
+-Cucumber Projesi oluşturmak istediğimizde yapmamız geren adımlar:
+ 1-Öncelikle dependency leri pom.xml dosyamıza yüklemiz gerekir
+    (selenium-java,webdrivermanager,cucumber-java,cucumber-jUnit)
+ 2-Sonra file->settings->plugins->marketplace den cucumber ve gherkin pluginlerini yüklemimiz gerekir
+ 3-Test->java->techproed->4 tane package oluştururuz
+    3.1-pages-> Locatelerimizi bu package altında tutarız
+    3.2-stepDefinition-> Yazdığımız Test adımlarının kodlarını tutarız
+    3.3-utilities->Projemiz için oluşturmuş olduğumuz Driver class'larını bu package'ta tutarız
+    3.4-runners->Bu package altında istediğimiz senaryoları çalıştırır ve raporlar alabiliriz
+ 4-Test package' ı altında Gherkin language kullanarak yazacağımız .feature file'lar için resources package'ı oluştururuz
+ 5-Projemizdeki data'ları bir yerde toplamak için .properties uzantılı dosya oluştururuz
+    (proje sevisinde bu dosyamızı oluştururuz)
+ 6-.feature file'lar için resources package'ı altında features isminde bir package daha oluştururuz
+ 7- features package'ı üstene gelip sağtıklayıp new file ile bir feature uzantılı file oluşturalım
