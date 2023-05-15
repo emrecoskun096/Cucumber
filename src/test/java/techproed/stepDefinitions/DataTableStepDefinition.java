@@ -40,4 +40,8 @@ public class DataTableStepDefinition {
         dataTablePage=new DataTablePage();
         Assert.assertTrue(dataTablePage.verify.getText().contains(firstname));
     }
+
+    @And("kullanici_verilen_urunleri_aratir")
+    public void kullanici_verilen_urunleri_aratir() {
+    }
 }
