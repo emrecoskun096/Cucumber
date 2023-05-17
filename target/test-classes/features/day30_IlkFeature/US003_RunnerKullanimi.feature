@@ -1,4 +1,4 @@
-@All
+
 Feature: US003_Amazon_Sayfasinda_Urun_Aratma
 
   @gr3

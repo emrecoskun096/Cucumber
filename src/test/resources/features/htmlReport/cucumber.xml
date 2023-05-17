@@ -1,10 +1,96 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="18.894" tests="1" skipped="0" failures="0" errors="0">
-<testcase classname="US003_Amazon_Sayfasinda_Urun_Aratma" name="TC02_Amazon_sayfasinda_Java_Aratma" time="18.027">
+<testsuite name="Cucumber" time="84.555" tests="5" skipped="0" failures="3" errors="0">
+<testcase classname="US003_Amazon_Testi" name="TC01_Amazonda_Urun_aratma" time="25.344">
+<failure type="org.openqa.selenium.NoSuchElementException" message="no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#twotabsearchtextbox&quot;}
+  (Session info: chrome=111.0.5563.65)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.8.3', revision: 'e5e76298c3'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [2db414aafe0cd4e476ca6a7232ab366d, findElement {using=id, value=twotabsearchtextbox}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.65, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\SAMSUNG\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:59996}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59996/devtoo..., se:cdpVersion: 111.0.5563.65, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2db414aafe0cd4e476ca6a7232ab366d">
+<![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#twotabsearchtextbox"}
+  (Session info: chrome=111.0.5563.65)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.8.3', revision: 'e5e76298c3'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [2db414aafe0cd4e476ca6a7232ab366d, findElement {using=id, value=twotabsearchtextbox}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.65, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\SAMSUNG\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:59996}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59996/devtoo..., se:cdpVersion: 111.0.5563.65, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2db414aafe0cd4e476ca6a7232ab366d
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy24.sendKeys(Unknown Source)
+	at techproed.stepDefinitions.AmazonStepDefinition.arama_kutusunda__aratir(AmazonStepDefinition.java:53)
+	at ✽.arama_kutusunda_"iphone"_aratir(file:///C:/Users/SAMSUNG/IdeaProjects/B129Cucumber/src/test/resources/features/day35_Excel_Rerun/US003_Rerun.feature:6)
+]]>
+</failure>
 <system-out><![CDATA[
-Given kullanici_amazon_sayfasina_gider......................................passed
-And arama_kutusunda_java_aratir.............................................passed
-And sayfayi_kapatir.........................................................passed
+Given kullanici_"amazon_Url"_sayfasina_gider................................passed
+And arama_kutusunda_"iphone"_aratir.........................................failed
+And basligin "java" icerdigini dogrular.....................................skipped
+]]></system-out>
+</testcase>
+<testcase classname="US003_Amazon_Testi" name="TC02_Amazonda_Urun_aratma" time="17.261">
+<system-out><![CDATA[
+Given kullanici_"amazon_Url"_sayfasina_gider................................passed
+And arama_kutusunda_"samsung"_aratir........................................passed
+And basligin "samsung" icerdigini dogrular..................................passed
+]]></system-out>
+</testcase>
+<testcase classname="US003_Amazon_Testi" name="TC03_Amazonda_Urun_aratma" time="12.221">
+<failure type="java.lang.AssertionError">
+<![CDATA[java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertTrue(Assert.java:53)
+	at techproed.stepDefinitions.GoogleStepDefinition.basligin_icerdigini_dogrular(GoogleStepDefinition.java:21)
+	at ✽.basligin "samsung" icerdigini dogrular(file:///C:/Users/SAMSUNG/IdeaProjects/B129Cucumber/src/test/resources/features/day35_Excel_Rerun/US003_Rerun.feature:16)
+]]>
+</failure>
+<system-out><![CDATA[
+Given kullanici_"amazon_Url"_sayfasina_gider................................passed
+And arama_kutusunda_"nokia"_aratir..........................................passed
+And basligin "samsung" icerdigini dogrular..................................failed
+]]></system-out>
+</testcase>
+<testcase classname="US003_Amazon_Testi" name="TC04_Amazonda_Urun_aratma" time="15.096">
+<failure type="java.lang.AssertionError">
+<![CDATA[java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertTrue(Assert.java:53)
+	at techproed.stepDefinitions.GoogleStepDefinition.basligin_icerdigini_dogrular(GoogleStepDefinition.java:21)
+	at ✽.basligin "samsung" icerdigini dogrular(file:///C:/Users/SAMSUNG/IdeaProjects/B129Cucumber/src/test/resources/features/day35_Excel_Rerun/US003_Rerun.feature:20)
+]]>
+</failure>
+<system-out><![CDATA[
+Given kullanici_"amazon_Url"_sayfasina_gider................................passed
+And arama_kutusunda_"motorola"_aratir.......................................passed
+And basligin "samsung" icerdigini dogrular..................................failed
+]]></system-out>
+</testcase>
+<testcase classname="US003_Amazon_Testi" name="TC05_Amazonda_Urun_aratma" time="13.729">
+<system-out><![CDATA[
+Given kullanici_"amazon_Url"_sayfasina_gider................................passed
+And arama_kutusunda_"motorola"_aratir.......................................passed
+And basligin "motorola" icerdigini dogrular.................................passed
 ]]></system-out>
 </testcase>
 </testsuite>
