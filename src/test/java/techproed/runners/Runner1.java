@@ -1,5 +1,4 @@
 package techproed.runners;
-
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
 import org.junit.runner.RunWith;
@@ -12,9 +11,9 @@ senaryoyu çalıştırabiliriz
 @RunWith(Cucumber.class)
 //Seneryoların nerede ve nasıl çalışacağı, hangi raporu kullanacağıyla alakalı seçenekleri ayarlarız
 @CucumberOptions(plugin = {"pretty",
-        "html:src/test/resources/features/htmlReport/cucumberHooks.html",
-        "json:target/json-reports/cucumber.json",
-        "junit:src/test/resources/features/htmlReport/cucumber.xml",
+        "html:src/test/resources/features/htmlReport/cucumberHooks1.html",
+        "json:target/json-reports/cucumber1.json",
+        "junit:src/test/resources/features/htmlReport/cucumber1.xml",
         "rerun:TestOutput/failed_scenario.txt",
         "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"},
         //rerun->fail olan senaryoları belirtilen yoldaki txt dosya içinde gösterir
@@ -22,7 +21,7 @@ senaryoyu çalıştırabiliriz
         features = "src/test/resources/features",
         glue = {"techproed/stepDefinitions"},//Bu parametre ile kodlarımızı yazdığımız stepDefinition
         //class'ının packege'ını belirtiriz
-        tags = "@techpro1",
+        tags = "@techpro2",
         dryRun = false,//dryRun=false Test adımlarını kontrol eder ve browser'ı çalıştırır
         //dryRun=True Test adımlarını sadece kontrol eder
         //default olarak false'tur
@@ -30,18 +29,5 @@ senaryoyu çalıştırabiliriz
         //monochrome = false kullanırsak renkli gösterir
         //default false
 )
-/*
-features ===> features'ların olduğu packega'ın yolunu ver(ContentRoot)
-glue ====> stepDefinition'ların olduğu packega'ın yolunu ver(Source Root)
-tags ====> çalıştırmak istediğin grubu yaz
-class lombok.javac.apt.LombokProcessor buna bakılıcak
-<dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
-            <version>1.18.24</version>
-            <optional>true</optional>
-</dependency>
- */
-
-public class Runner {
+public class Runner1 {
 }
